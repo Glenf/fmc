@@ -1,0 +1,7 @@
+{
+    "name" : "Sekoitus",
+    "version" : "0.1",
+    "dependencies" : {
+        "zepto" : "~1.0.0"
+        }
+}
