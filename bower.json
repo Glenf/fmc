@@ -1,7 +1,13 @@
 {
-    "name" : "Sekoitus",
-    "version" : "0.1",
-    "dependencies" : {
-        "zepto" : "~1.0.0"
-        }
+  "name": "Sekoitus",
+  "version": "0.1",
+  "dependencies": {
+    "zepto": "~1.0.0"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "main": "main"
 }
