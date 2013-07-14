@@ -10,6 +10,7 @@ html {
   background-color: #d0dbed;
   font-size: 100%;
   color: #012d3d;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 body {
   font-size: 1em;
@@ -40,9 +41,9 @@ select {
   font-size: 1rem;
   width: 100%;
   padding: 0.4em 0.5em;
-  border: none;
   border-radius: 3px;
   margin-bottom: 0.8em;
+  border: 1px solid #02526f;
 }
 label {
   font-weight: 700;
