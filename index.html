@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <title>Fuel mixture</title>
+    <link href="assets/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="banner">
+        <h1 class="site-title">Fuel mixture calculator</h1>
+      </header>
+      <div class="content">
+        <div class="row">
+          <h2>Enter the values below</h2>
+          <form method="post" class="calc cf">
+            <div class="block">
+              <label for="fuel1">Fuel 1</label>
+              <select id="fuel1" name="fuel1">
+                <option selected>95E10</option>
+                <option>98E5</option>
+                <option>RE85</option>
+              </select>
+              <label for="fuel1_amount">Fuel amount (L)</label>
+              <input id="fuel1_amount" type="text" name="fuel1_Amount" value="45">
+            </div>
+            <div class="block">
+              <label for="fuel2">Fuel 2</label>
+              <select id="fuel2" name="fuel2">
+                <option>95E10</option>
+                <option>98E5</option>
+                <option selected>RE85</option>
+              </select>
+              <label for="fuel2_amount">Fuel amount (L)</label>
+              <input id="fuel2_amount" type="text" name="fuel2_amount" value="15">
+            </div>
+          </form>
+        </div>
+        <div id="results" class="results cf">
+          <div class="result">
+            <p class="title">Total amount of fuel</p>
+            <p id="total" class="value">0 L</p>
+          </div>
+          <div class="result">
+            <p class="title">Gasoline ethanol percentage</p>
+            <p id="ethanol" class="value">0 %</p>
+          </div>
+          <div class="result">
+            <p class="title">Octane of fuel (RON)</p>
+            <p id="octane" class="value">0</p>
+            <p class="disclaimer">
+               
+              The octane calculation is only directional and based on
+              an assumption that RE85 octane is 106
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="assets/components/jquery/jquery.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</html>

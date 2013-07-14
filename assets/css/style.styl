@@ -1,0 +1,102 @@
+// Variables
+
+c1 = #280034
+c2 = #4E0025
+c3 = #9A1600
+c4 = #996500
+c5 = #613E25
+
+
+*
+    box-sizing border-box
+
+html
+body
+    padding 0
+    margin 0
+
+// Mixins
+
+    
+
+html
+    background-color c1
+    font-size 100%
+
+body
+    font-size 1em
+
+.banner
+    width 100%
+    background-color c2
+    padding 1em
+    text-align center
+    margin-bottom 1em
+
+.site-title
+    color #fff
+    font-weight 2em
+    line-height 1
+    text-transform uppercase
+
+.content
+    max-width 1080px
+    width 90%
+    margin 0 auto
+
+
+label
+    display block
+
+input
+select
+    font-size 1rem
+    width 20em
+    padding .4em .5em
+    border none
+    border-radius 3px
+
+.row
+    border-radius 3px
+    background-color #fff
+    background-color rgba(255,255,255,.6)
+    margin-bottom 1em
+    padding 1em
+
+.block
+    float left
+    width 50%
+    padding 0 2em
+
+.results
+    border-radius 3px
+    background-color #ccc
+    background-color rgba(225,225,225,.6)
+
+.result
+    float left
+    width 33%
+    padding 1em 2em
+    text-align center
+
+    .title
+        font-weight 700
+
+    .value
+        font-size 2rem
+        font-weight bold
+
+    .disclaimer
+        font-size .8rem
+        color #333
+
+
+// Helpers
+.cf
+    zoom 1
+    &:after
+    &:before
+        content " "
+        display table
+    &:after
+        clear both

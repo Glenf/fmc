@@ -1,0 +1,56 @@
+doctype 5
+html(lang="en").no-js
+    head
+        title Fuel mixture
+
+        link(href="assets/css/style.css",rel="stylesheet")
+
+    body
+        .wrapper
+            header.banner
+                h1.site-title Fuel mixture calculator
+
+            .content
+                .row
+                    h2 Enter the values below
+
+                    form.calc.cf(method="post")
+                        .block
+                            label(for="fuel1") Fuel 1
+                            select#fuel1(name="fuel1")
+                                option(selected) 95E10
+                                option 98E5
+                                option RE85
+
+                            label(for="fuel1_amount") Fuel amount (L)
+                            input#fuel1_amount(type="text",name="fuel1_Amount",value="45")
+
+                        .block
+
+                            label(for="fuel2") Fuel 2
+                            select#fuel2(name="fuel2")
+                                option 95E10
+                                option 98E5
+                                option(selected) RE85
+
+                            label(for="fuel2_amount") Fuel amount (L)
+                            input#fuel2_amount(type="text",name="fuel2_amount",value="15")
+
+                #results.results.cf
+                    .result
+                        p.title Total amount of fuel
+                        p.value#total 0 L
+
+                    .result
+                        p.title Gasoline ethanol percentage
+                        p.value#ethanol 0 %
+
+                    .result
+                        p.title Octane of fuel (RON)
+                        p.value#octane 0
+                        p.disclaimer 
+                            | The octane calculation is only directional and based on
+                            | an assumption that RE85 octane is 106
+
+    script(src="assets/components/jquery/jquery.min.js")
+    script(src="assets/js/app.js")

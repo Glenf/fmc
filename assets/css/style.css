@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+html {
+  background-color: #280034;
+  font-size: 100%;
+}
+body {
+  font-size: 1em;
+}
+.banner {
+  width: 100%;
+  background-color: #4e0025;
+  padding: 1em;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.site-title {
+  color: #fff;
+  font-weight: 2em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.content {
+  max-width: 1080px;
+  width: 90%;
+  margin: 0 auto;
+}
+label {
+  display: block;
+}
+input,
+select {
+  font-size: 1rem;
+  width: 20em;
+  padding: 0.4em 0.5em;
+  border: none;
+  border-radius: 3px;
+}
+.row {
+  border-radius: 3px;
+  background-color: #fff;
+  background-color: rgba(255,255,255,0.6);
+  margin-bottom: 1em;
+  padding: 1em;
+}
+.block {
+  float: left;
+  width: 50%;
+  padding: 0 2em;
+}
+.results {
+  border-radius: 3px;
+  background-color: #ccc;
+  background-color: rgba(225,225,225,0.6);
+}
+.result {
+  float: left;
+  width: 33%;
+  padding: 1em 2em;
+  text-align: center;
+}
+.result .title {
+  font-weight: 700;
+}
+.result .value {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.result .disclaimer {
+  font-size: 0.8rem;
+  color: #333;
+}
+.cf {
+  zoom: 1;
+}
+.cf:after,
+.cf:before {
+  content: " ";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
