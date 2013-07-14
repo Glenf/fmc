@@ -7,15 +7,16 @@ body {
   margin: 0;
 }
 html {
-  background-color: #280034;
+  background-color: #d0dbed;
   font-size: 100%;
+  color: #012d3d;
 }
 body {
   font-size: 1em;
 }
 .banner {
   width: 100%;
-  background-color: #4e0025;
+  background-color: #38ad9e;
   padding: 1em;
   text-align: center;
   margin-bottom: 1em;
@@ -37,17 +38,22 @@ label {
 input,
 select {
   font-size: 1rem;
-  width: 20em;
+  width: 100%;
   padding: 0.4em 0.5em;
   border: none;
   border-radius: 3px;
+  margin-bottom: 0.8em;
+}
+label {
+  font-weight: 700;
+  font-size: 1.2rem;
 }
 .row {
   border-radius: 3px;
   background-color: #fff;
   background-color: rgba(255,255,255,0.6);
   margin-bottom: 1em;
-  padding: 1em;
+  padding: 0.5em 1em 1em;
 }
 .block {
   float: left;
@@ -56,8 +62,8 @@ select {
 }
 .results {
   border-radius: 3px;
-  background-color: #ccc;
-  background-color: rgba(225,225,225,0.6);
+  background-color: #ffeb9e;
+  margin-bottom: 2em;
 }
 .result {
   float: left;
@@ -71,10 +77,22 @@ select {
 .result .value {
   font-size: 2rem;
   font-weight: bold;
+  border-radius: 2px;
+  padding: 0.5em;
+  background-color: #bbb;
+  box-shadow: inset 0 0 5px 1px rgba(0,0,0,0.2);
 }
 .result .disclaimer {
   font-size: 0.8rem;
   color: #333;
+}
+.site-info {
+  padding: 0.4em;
+  background-color: #38ad9e;
+  text-align: center;
+}
+a {
+  color: #02526f;
 }
 .cf {
   zoom: 1;
