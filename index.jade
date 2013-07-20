@@ -1,70 +1,49 @@
-doctype 5
-html(lang="en")
-    head
+extends _template/base.jade
+
+block head
         title Fuel mixture
 
-        link(href="assets/css/style.css",rel="stylesheet")
+block content
 
-    body
-        .wrapper
-            header.banner
-                h1.site-title Fuel mixture calculator
+    .row
+        h2 Enter the values below
 
-            .content
-                .row
-                    h2 Enter the values below
+        form.calc.cf(method="post")
+            .block
+                label(for="fuel1") Fuel 1
+                select#fuel1(name="fuel1")
+                    option(selected) 95E10
+                    option 98E5
+                    option RE85
 
-                    form.calc.cf(method="post")
-                        .block
-                            label(for="fuel1") Fuel 1
-                            select#fuel1(name="fuel1")
-                                option(selected) 95E10
-                                option 98E5
-                                option RE85
+                label(for="fuel1_amount") Fuel amount (L)
+                output(for="fuel1_amount") 45
+                input#fuel1_amount(type="range",name="fuel1_amount",value="45",min="0",max="100",step="1")
 
-                            label(for="fuel1_amount") Fuel amount (L)
-                            input#fuel1_amount(type="text",name="fuel1_Amount",value="45")
+            .block
 
-                        .block
+                label(for="fuel2") Fuel 2
+                select#fuel2(name="fuel2")
+                    option 95E10
+                    option 98E5
+                    option(selected) RE85
 
-                            label(for="fuel2") Fuel 2
-                            select#fuel2(name="fuel2")
-                                option 95E10
-                                option 98E5
-                                option(selected) RE85
+                label(for="fuel2_amount") Fuel amount (L)
+                output(for="fuel2_amount") 15
+                input#fuel2_amount(type="range",name="fuel2_amount",value="15",min="0",max="100",step="1")
 
-                            label(for="fuel2_amount") Fuel amount (L)
-                            input#fuel2_amount(type="text",name="fuel2_amount",value="15")
+    #results.results.cf
+        .result
+            p.title Total amount of fuel
+            p.value#total 0 L
 
-                #results.results.cf
-                    .result
-                        p.title Total amount of fuel
-                        p.value#total 0 L
+        .result
+            p.title Gasoline ethanol percentage
+            p.value#ethanol 0 %
 
-                    .result
-                        p.title Gasoline ethanol percentage
-                        p.value#ethanol 0 %
-
-                    .result
-                        p.title Octane of fuel (RON)
-                        p.value#octane 0
-                        p.disclaimer 
-                            | The octane calculation is only directional and based on
-                            | an assumption that RE85 octane is 106
-        footer.site-info
-            p.copy Site by 
-                a(href="http://pääkkö.fi") Tommi Pääkkö 
-                | (
-                a(href="https://twitter.com/tommipaakko") @tommipaakko
-                | )
-
-    script(src="assets/components/jquery/jquery.min.js")
-    script(src="assets/js/app.js")
-    script
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-42453617-1', 'glenf.github.io');
-        ga('send', 'pageview');
+        .result
+            p.title Octane of fuel (RON)
+            p.value#octane 0
+            p.disclaimer 
+                | The octane calculation is only directional and based on
+                | an assumption that RE85 octane is 106

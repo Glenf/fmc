@@ -30,7 +30,8 @@ $ ->
         e.preventDefault
         return false
 
-    inputs.on 'blur', ->
+    inputs.on 'change', ->
+        $('output[for="'+this.name+'"]').val(this.value)
         updateValues()
 
     selects.on 'change', ->
