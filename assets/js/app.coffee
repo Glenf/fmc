@@ -30,7 +30,7 @@ $ ->
         e.preventDefault
         return false
 
-    inputs.on 'blur', ->
+    inputs.on 'change', ->
         updateValues()
 
     selects.on 'change', ->
