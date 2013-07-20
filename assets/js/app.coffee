@@ -31,6 +31,7 @@ $ ->
         return false
 
     inputs.on 'change', ->
+        $('output[for="'+this.name+'"]').val(this.value)
         updateValues()
 
     selects.on 'change', ->

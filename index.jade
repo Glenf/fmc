@@ -17,7 +17,8 @@ block content
                     option RE85
 
                 label(for="fuel1_amount") Fuel amount (L)
-                input#fuel1_amount(type="text",name="fuel1_Amount",value="45")
+                output(for="fuel1_amount") 45
+                input#fuel1_amount(type="range",name="fuel1_amount",value="45",min="0",max="100",step="1")
 
             .block
 
@@ -28,7 +29,8 @@ block content
                     option(selected) RE85
 
                 label(for="fuel2_amount") Fuel amount (L)
-                input#fuel2_amount(type="text",name="fuel2_amount",value="15")
+                output(for="fuel2_amount") 15
+                input#fuel2_amount(type="range",name="fuel2_amount",value="15",min="0",max="100",step="1")
 
     #results.results.cf
         .result
