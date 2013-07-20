@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8">
+    <meta http-equip="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
     <title>Fuel mixture</title>
     <link href="assets/css/style.css" rel="stylesheet">
   </head>
@@ -21,7 +24,8 @@
                 <option>RE85</option>
               </select>
               <label for="fuel1_amount">Fuel amount (L)</label>
-              <input id="fuel1_amount" type="text" name="fuel1_Amount" value="45">
+              <output for="fuel1_amount">45</output>
+              <input id="fuel1_amount" type="range" name="fuel1_amount" value="45" min="0" max="100" step="1">
             </div>
             <div class="block">
               <label for="fuel2">Fuel 2</label>
@@ -31,7 +35,8 @@
                 <option selected>RE85</option>
               </select>
               <label for="fuel2_amount">Fuel amount (L)</label>
-              <input id="fuel2_amount" type="text" name="fuel2_amount" value="15">
+              <output for="fuel2_amount">15</output>
+              <input id="fuel2_amount" type="range" name="fuel2_amount" value="15" min="0" max="100" step="1">
             </div>
           </form>
         </div>
@@ -55,10 +60,10 @@
           </div>
         </div>
       </div>
+      <footer class="site-info">
+        <p class="copy">Site by <a href="http://pääkkö.fi">Tommi Pääkkö</a> ( <a href="https://twitter.com/TommiPaakko">Twitter</a> | <a href="https://github.com/Glenf">GitHub</a> | <a href="https://plus.google.com/118149929029845648902/">Google+</a> )</p>
+      </footer>
     </div>
-    <footer class="site-info">
-      <p class="copy">Site by <a href="http://pääkkö.fi">Tommi Pääkkö </a>(<a href="https://twitter.com/tommipaakko">@tommipaakko</a>)</p>
-    </footer>
   </body>
   <script src="assets/components/jquery/jquery.min.js"></script>
   <script src="assets/js/app.js"></script>
