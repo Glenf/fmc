@@ -24,14 +24,19 @@ body {
 }
 .site-title {
   color: #fff;
-  font-weight: 2em;
+  font-weight: 700;
   line-height: 1;
   text-transform: uppercase;
 }
 .content {
   max-width: 1080px;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
+}
+@media screen and (min-width : 600px) {
+  .content {
+    width: 90%;
+  }
 }
 label {
   display: block;
@@ -62,12 +67,22 @@ label {
   background-color: #fff;
   background-color: rgba(255,255,255,0.6);
   margin-bottom: 1em;
-  padding: 0.5em 1em 1em;
+  padding: 0.5em 0 1em;
+}
+.row h2 {
+  text-align: center;
+  padding: 0.2em;
 }
 .block {
-  float: left;
-  width: 50%;
-  padding: 0 2em;
+  padding: 0 0.5em;
+}
+@media screen and (min-width : 520px) {
+  .block {
+    float: left;
+    width: 50%;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
 }
 .results {
   border-radius: 3px;
@@ -75,13 +90,21 @@ label {
   margin-bottom: 2em;
 }
 .result {
-  float: left;
-  width: 33%;
-  padding: 1em 2em;
+  padding: 0.5em 0.5em 0;
   text-align: center;
 }
 .result .title {
   font-weight: 700;
+}
+@media screen and (min-width : 520px) {
+  .result .title {
+    height: 2em;
+  }
+}
+@media screen and (min-width : 750px) {
+  .result .title {
+    height: 1em;
+  }
 }
 .result .value {
   font-size: 2rem;
@@ -95,8 +118,14 @@ label {
   font-size: 0.8rem;
   color: #333;
 }
+@media screen and (min-width : 520px) {
+  .result {
+    float: left;
+    width: 33%;
+  }
+}
 .site-info {
-  padding: 0.4em;
+  padding: 0.4em 2em;
   background-color: #38ad9e;
   text-align: center;
 }
