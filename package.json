@@ -1,0 +1,28 @@
+{
+  "name": "fmc",
+  "version": "0.0.2",
+  "description": "Fuel mixture calculator",
+  "main": "Gruntile.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Glenf/fmc.git"
+  },
+  "keywords": [
+    "Fuel",
+    "Ethano",
+    "Calculator"
+  ],
+  "author": "Tommi Pääkkö",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/Glenf/fmc/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jade": "~0.8.0",
+    "grunt-contrib-jshint": "~0.6.3",
+    "grunt-contrib-watch": "~0.5.2",
+    "grunt-contrib-stylus": "~0.8.0",
+    "grunt-contrib-coffee": "~0.7.0"
+  }
+}
